@@ -202,6 +202,16 @@ div.project {
   overflow:hidden;
   background-image:url('img/kik.png');
   background-size:100%;
+          max-height:200px;
+        max-width:200px;
+}
+
+@media (min-width: 992px){
+    div.project {
+        margin-left : 1em;
+        margin-right : 1em;
+
+    }
 }
 
 div.project a {
@@ -227,19 +237,20 @@ div.project a {
 }
 
 div.hover .icon {
-  margin-top:40%;
+  margin-top:20%;
   font-size:2em;
 }
 
-.social {
+.social:hover {
   background-color:#333;
   color:#FFF;
 }
 
-.social:hover {
+.social {
   background-color:#FFF;
   color:#333;
 }
+
 /*
 .hover > .icon {
   font-size:20px;
