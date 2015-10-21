@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$(this).find(".hover").fadeOut(200);
 	});
 
-	$('.thumbnail').magnificPopup({
+	$('.popup-link').magnificPopup({
 	  type:'inline',
 	  midClick: true
 	});
