@@ -34,6 +34,8 @@ $(document).ready(function() {
 	navSetter('resume');
 	navSetter('portfolio');
 
+	
+
 
 });
 // scroll function

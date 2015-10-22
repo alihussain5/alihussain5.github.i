@@ -270,14 +270,24 @@ a.jerb {
   width:6em;
 }
 
-#resume{
+#resume .bg img {
+  width:100%;
+  height:100%;
+  margin: 5px 10px 10px 5px;
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
 
-    background: url(../img/office2.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+
+#resume .bg {
+  overflow:hidden;
+  position: absolute;
+  background-color:black;
+  width:100%;
+  height:100%;
 }
 /*
 .hover > .icon {
