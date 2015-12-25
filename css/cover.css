@@ -32,7 +32,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: none;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -40,7 +40,7 @@ body {
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
-
+  
  /* -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
 }
@@ -174,6 +174,8 @@ body {
     -o-background-size: cover;
 }
 
+
+
 #about {
   height:20%;
 }
@@ -181,31 +183,7 @@ body {
 #portfolio {
   height:20%;
   background-color: gray;
-}
-
-#project1 {
-
-
-}
-.project {
-    
-    
-
-}
-
-.hover {
-    
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    display: none;
-    text-shadow: none;
-    background-color:black;
-    opacity:0.8;
-    margin-left:15px;
+  max-width: 100%;
 }
 
 .white-popup {
@@ -219,9 +197,100 @@ body {
   text-shadow: none;
 }
 
+
+
+div.project {
+  position:relative;
+  overflow:hidden;
+  background-image:url('img/kik.png');
+  background-size:100%;
+          max-height:200px;
+        max-width:200px;
+}
+
+@media (min-width: 992px){
+    div.project {
+        margin-left : 1em;
+        margin-right : 1em;
+
+    }
+}
+
+div.project a {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:1em;
+  text-decoration:none;
+  z-index:10;
+}
+
+.hover {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:1.1em;
+  background-color:black;
+  z-index:9;
+  display: none;
+  opacity: 0.8;
+}
+
+div.hover .icon {
+  margin-top:20%;
+  font-size:2em;
+}
+
+.social:hover {
+  background-color:#333;
+  color:#FFF;
+}
+
+.social {
+  background-color:#FFF;
+  color:#333;
+}
+
+#resume {
+  background-color:#fff;
+
+}
+
+div.job {
+  display:none;
+}
+
+div#job1 {
+  display:inline;
+}
+
+a.jerb {
+  width:6em;
+}
+
+#resume .bg img {
+  width:100%;
+  height:100%;
+  margin: 5px 10px 10px 5px;
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+
+#resume .bg {
+  overflow:hidden;
+  position: absolute;
+  background-color:black;
+  width:100%;
+  height:100%;
+}
+/*
 .hover > .icon {
-  margin-top:30%;
-  height:100px;
   font-size:20px;
 }
 
@@ -230,6 +299,7 @@ body {
 }
 
 
+<<<<<<< HEAD
 #main-box {
   background-color:transparent;
   border:2px solid white;
@@ -269,4 +339,26 @@ body {
   margin-top:30%;
   color:#333;
   text-shadow:none;
+=======
+#project1 {
+  background-image:url('img/kik.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+
+.hover {
+    background-color: rgba(50,50,50,1);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity:0.8;
+
+>>>>>>> origin/gh-pages
 }
