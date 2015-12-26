@@ -299,47 +299,6 @@ a.jerb {
 }
 
 
-<<<<<<< HEAD
-#main-box {
-  background-color:transparent;
-  border:2px solid white;
-  position: absolute;
-  height:60%;
-  width: 60%;
-  margin:20% 20%;
-  padding:0 0;
-}
-
-#main-box-right {
-  width:50%;
-  height:100%;
-  background-color:white;
-  position:absolute;
-  margin-left:47%;
-}
-
-#main-box-left {
-
-  width:50%;
-  height:100%;
-  background-color:transparent;
-  position: absolute;
-  margin-right:55%;
-  margin-left:0%;
-
-}
-
-#main-box-left #name {
-  margin-top:90%;
-  padding-right:10%;
-
-}
-
-#main-box-right #description {
-  margin-top:30%;
-  color:#333;
-  text-shadow:none;
-=======
 #project1 {
   background-image:url('img/kik.png');
   background-size: contain;
@@ -360,5 +319,4 @@ a.jerb {
     display: none;
     opacity:0.8;
 
->>>>>>> origin/gh-pages
 }
