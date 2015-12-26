@@ -27,6 +27,14 @@ h2 {
   font-size:50px;
 }
 
+h4 {
+  color:black;
+}
+
+h5 {
+  color:black;
+}
+
 .title {
 
   margin: 5% 0;
@@ -97,6 +105,7 @@ h2 {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background:rgba(254,209,54,.9);
+  background:rgba(140,140,140,0.9);
   position: absolute;
   width:100%;
   height:100%;
@@ -106,6 +115,14 @@ h2 {
   -moz-transition: all ease .5s  
 }
 
+#portfolio .portfolio-item .portfolio-link .portfolio-hover span {
+  font-size:60px;
+  color:white;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
@@ -113,5 +130,98 @@ h2 {
 #portfolio .portfolio-item .portfolio-subtitle h4 {
   display:inline-block;
   color:black;
-  text:center;
+}
+
+#timeline {
+  background-color: gray;
+  position:relative;
+  z-index:-1;
+}
+
+
+#timeline .timeline-item {
+  height:100%;
+  min-height:100px;
+  display:flex;
+  align-items:center;
+}
+
+#timeline .timeline-item .timeline-text {
+  padding:0;
+}
+
+#timeline .timeline-item .timeline-text .timeline-text-container {
+  background-color:white;
+  padding: 15px 15px 15px 15px;
+  color:black;
+}
+
+#timeline .timeline-item .timeline-icon {
+  position: relative;
+  height:100%;
+  min-height:100px;
+  z-index:3;
+  overflow:hidden;
+}
+
+
+
+#timeline .timeline-item .timeline-icon .circle {
+  width: 80px;
+  height: 80px;
+  line-height: 50px;
+  padding:0;
+  border-radius: 50%;
+  background-color:transparent;
+  position: absolute;
+  z-index:3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#timeline .timeline-item .timeline-icon .circle span {
+  color:white;
+  left:50%;
+  top:50%;
+  font-size:40px;
+  transform: translate(-50%,-50%);
+  position:absolute;
+  z-index:5;
+}
+
+#timeline .school .timeline-icon .circle hr {
+  position:absolute;
+
+  top:25%;
+  left:100%;
+  width:100%;
+}
+
+#timeline .work .timeline-icon .circle hr {
+  position: absolute;
+
+  top:25%;
+  left:-100%;
+  width:100%;
+}
+
+.vertical {
+  width:0;
+  z-index:1;
+  position: absolute;
+  z-index:1;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+
+@media (min-width: 768px) {
+  .vertical {
+    width:790px;
+  }
+  #timeline .timeline-item .timeline-icon .circle {
+    border:1px white solid;
+    background-color:black;
+  }
 }
