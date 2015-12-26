@@ -6,32 +6,21 @@ $(document).ready(function() {
 		scrollToID('#' + sectionID, 750);
 	});
 
-	$('.project').on("mouseenter",function(){
-		$(this).find(".hover").fadeIn(300);
+
+	$(".timeline-text-container").on("mouseenter", function () {
+		$(this).children(".timeline-hover-notice").hide();
+		$(this).children(".timeline-class-desc").slideToggle();
 	});
 
-	$('.project').on("mouseleave",function() {
-		$(this).find(".hover").fadeOut(200);
-	});
-
-	$('.popup-link').magnificPopup({
-	  type:'inline',
-	  midClick: true
-	});
-
-	$('.job-button').on('click', function(event) {
-		event.preventDefault();
-		var ID = $(this).attr("data-id");
-
-		$(".job").fadeOut(0);
-		$("#" + ID).fadeIn(200);
-		
+	$(".timeline-text-container").on("mouseleave", function () {
+		$(this).children(".timeline-class-desc").slideToggle(function () {
+			//$(this).parent().children(".timeline-hover-notice").show();	
+		});
 		
 	});
 
 	navSetter('main');
-	navSetter('about');
-	navSetter('resume');
+	navSetter('timeline');
 	navSetter('portfolio');
 
 	
