@@ -7,24 +7,21 @@ $(document).ready(function() {
 	});
 
 
-	$(".timeline-text-container").on("mouseenter", function () {
-		$(this).children(".timeline-hover-notice").hide();
-		$(this).children(".timeline-class-desc").slideToggle();
-	});
-
-	$(".timeline-text-container").on("mouseleave", function () {
-		$(this).children(".timeline-class-desc").slideToggle(function () {
-			//$(this).parent().children(".timeline-hover-notice").show();	
-		});
-		
-	});
-
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		$(".timeline-text-container").on("click", function () {
-			$(this).children(".timeline-class-desc").slideToggle(function () {
-			//$(this).parent().children(".timeline-hover-notice").show();	
-			});
+			$(this).children(".timeline-class-desc").slideToggle();
 		});	
+	} else {
+		$(".timeline-text-container").on("mouseenter", function () {
+			$(this).children(".timeline-hover-notice").hide();
+			$(this).children(".timeline-class-desc").slideToggle();
+		});
+
+		$(".timeline-text-container").on("mouseleave", function () {
+			$(this).children(".timeline-class-desc").slideToggle(function () {
+				//$(this).parent().children(".timeline-hover-notice").show();	
+			});
+		});
 	}
 
 	navSetter('main');
