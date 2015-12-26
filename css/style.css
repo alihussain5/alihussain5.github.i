@@ -28,13 +28,18 @@ h2 {
 }
 
 h4 {
-  color:black;
+  color:#4A4A4A;
 }
 
 h5 {
-  color:black;
+  line-height: 0;
+  padding-bottom:5px;
+  color:#5C5C5C;
 }
 
+p {
+  color:#5C5C5C;
+}
 .title {
 
   margin: 5% 0;
@@ -133,7 +138,7 @@ h5 {
 }
 
 #timeline {
-  background-color: gray;
+  background-color: #ABABAB;
   position:relative;
   z-index:-1;
 }
@@ -146,22 +151,34 @@ h5 {
   align-items:center;
 }
 
-#timeline .timeline-item .new {
+#timeline .timeline-item .timeline-text {
   padding:0;
 }
 
 #timeline .timeline-item .timeline-text .timeline-text-container {
   background-color:white;
-  padding: 15px 15px 15px 15px;
+  padding: 5px 15px 5px 15px;
   color:black;
+  margin: 15px 0;
+  position: relative;
+}
+
+#timeline .work .timeline-text .timeline-text-container {
+  margin-left:15px;
+  z-index:3;
+}
+
+#timeline .school .timeline-text .timeline-text-container {
+  margin-right:15px;
+  z-index:3;
 }
 
 #timeline .timeline-item .timeline-icon {
   position: relative;
   height:100%;
   min-height:100px;
-  z-index:3;
-  overflow:hidden;
+
+  /*overflow:hidden;*/
 }
 
 
@@ -181,7 +198,7 @@ h5 {
 }
 
 #timeline .timeline-item .timeline-icon .circle span {
-  color:white;
+  color:#363636;
   left:50%;
   top:50%;
   font-size:40px;
@@ -190,38 +207,56 @@ h5 {
   z-index:5;
 }
 
-#timeline .school .timeline-icon .circle hr {
-  position:absolute;
-
-  top:25%;
-  left:100%;
-  width:100%;
-}
-
-#timeline .work .timeline-icon .circle hr {
+#timeline .timeline-item .timeline-icon .vertical-top,
+#timeline .timeline-item .timeline-icon .vertical-bottom {
   position: absolute;
-
-  top:25%;
-  left:-100%;
-  width:100%;
-}
-
-.vertical {
-  width:0;
-  z-index:1;
-  position: absolute;
-  z-index:1;
-  top: 59%;
+  width:2px;
+  background-color:white;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%,-50%) rotate(90deg);
+  transform: translate(-50%,-50%);
+  height:0;
+  z-index: 1;
+}
+
+#timeline .timeline-item .timeline-icon .vertical-top {
+  top:0;
+  z-index:1;
+}
+
+#timeline .timeline-item .timeline-icon .horizontal {
+  position: absolute;
+  width:0%;
+  background-color:white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height:2px;
+  z-index:1;
+}
+
+#timeline .school .timeline-icon .horizontal {
+  left:100%;
+}
+
+#timeline .work .timeline-icon .horizontal {
+  left:0;
 }
 
 @media (min-width: 768px) {
-  .vertical {
-    width:790px;
+  #timeline .timeline-item .timeline-icon .vertical-top,
+  #timeline .timeline-item .timeline-icon .vertical-bottom {
+    height:90%;
   }
   #timeline .timeline-item .timeline-icon .circle {
-    border:1px white solid;
+    border:2px white solid;
     background-color:black;
+  }
+
+  #timeline .timeline-item .timeline-icon .horizontal {
+    width:90%;
+  }
+  #timeline .timeline-item .timeline-icon .circle span {
+    color:white;
   }
 }
