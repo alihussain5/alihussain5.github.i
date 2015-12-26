@@ -27,6 +27,14 @@ h2 {
   font-size:50px;
 }
 
+h4 {
+  color:black;
+}
+
+h5 {
+  color:black;
+}
+
 .title {
 
   margin: 5% 0;
@@ -138,8 +146,14 @@ h2 {
   align-items:center;
 }
 
-#timeline .timeline-item .timeline-text{
+#timeline .timeline-item .timeline-text {
+  padding:0;
+}
 
+#timeline .timeline-item .timeline-text .timeline-text-container {
+  background-color:white;
+  padding: 15px 15px 15px 15px;
+  color:black;
 }
 
 #timeline .timeline-item .timeline-icon {
@@ -197,14 +211,14 @@ h2 {
   z-index:1;
   position: absolute;
   z-index:1;
-  top: 60%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%,-50%) rotate(90deg);
 }
 
 @media (min-width: 768px) {
   .vertical {
-    width:100%;
+    width:790px;
   }
   #timeline .timeline-item .timeline-icon .circle {
     border:1px white solid;
