@@ -9,6 +9,7 @@ $(document).ready(function() {
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		$(".timeline-text-container").on("click", function () {
+			$(this).children(".timeline-hover-notice").hide();
 			$(this).children(".timeline-class-desc").slideToggle();
 		});	
 	} else {
