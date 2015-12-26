@@ -141,6 +141,7 @@ p {
   background-color: #ABABAB;
   position:relative;
   z-index:-1;
+  padding-bottom:40px;
 }
 
 
