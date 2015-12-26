@@ -19,12 +19,13 @@ $(document).ready(function() {
 		
 	});
 
-	$(".timeline-text-container").on("click", function () {
-		$(this).children(".timeline-class-desc").slideToggle(function () {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+		$(".timeline-text-container").on("click", function () {
+			$(this).children(".timeline-class-desc").slideToggle(function () {
 			//$(this).parent().children(".timeline-hover-notice").show();	
-		});
-		
-	});	
+			});
+		});	
+	}
 
 	navSetter('main');
 	navSetter('timeline');
