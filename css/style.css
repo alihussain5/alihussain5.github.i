@@ -46,6 +46,9 @@ h5 {
 p {
   color:#5C5C5C;
 }
+
+
+
 .title {
 
   margin: 5% 0;
@@ -95,6 +98,10 @@ p {
   height:80%;
 }
 
+#portfolio .portfolio-item .portfolio-link:focus {
+  outline:0;
+}
+
 #portfolio .portfolio-item .portfolio-subtitle {
   background-color:white;
   padding: 10px 0;
@@ -141,6 +148,47 @@ p {
 #portfolio .portfolio-item .portfolio-subtitle h4 {
   display:inline-block;
   color:black;
+}
+
+#portfolio .portfolio-item .modal .modal-header {
+  border-bottom:none;
+}
+
+#portfolio .portfolio-item .modal .modal-body .modal-body-picture img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#portfolio .portfolio-item .modal .modal-body .modal-body-picture {
+  overflow:hidden;
+  height:300px;
+  max-width:auto;
+  margin: 0 10%;
+}
+
+#portfolio .portfolio-item .modal .modal-body .modal-body-text h3 {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  text-align: center;
+}
+
+#portfolio .portfolio-item .modal .modal-body .modal-body-text {
+  margin-left: 10%;
+  margin-right: 5%;
+
+}
+
+@media (min-width: 992px) {
+  #portfolio .portfolio-item .modal .modal-admin {
+    width:150%;
+    margin-left:-25%;
+  }
+  #portfolio .portfolio-item .modal .modal-body .modal-body-text {
+    margin-left: 6%;
+    margin-right: 5%;
+  }
 }
 
 #timeline {

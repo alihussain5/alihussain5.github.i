@@ -18,19 +18,17 @@ $(document).ready(function() {
 			$(this).children(".timeline-class-desc").slideToggle();
 		});
 
-		$(".timeline-text-container").on("mouseleave", function () {
+		$(".timseline-text-container").on("mouseleave", function () {
 			$(this).children(".timeline-class-desc").slideToggle(function () {
-				//$(this).parent().children(".timeline-hover-notice").show();	
+				//$(this).sibling(".timeline-hover-notice").show();	
 			});
 		});
 	}
 
+
 	navSetter('main');
 	navSetter('timeline');
 	navSetter('portfolio');
-
-	
-
 
 });
 // scroll function
