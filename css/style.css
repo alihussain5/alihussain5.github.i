@@ -61,6 +61,7 @@ p {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    margin-top:20px;
 }
 
 #main .container-fluid {
