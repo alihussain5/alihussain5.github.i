@@ -18,13 +18,10 @@ $(document).ready(function() {
 			$(this).children(".timeline-class-desc").slideToggle();
 		});
 
-		$(".timseline-text-container").on("mouseleave", function () {
-			$(this).children(".timeline-class-desc").slideToggle(function () {
-				//$(this).sibling(".timeline-hover-notice").show();	
-			});
+		$(".timeline-text-container").on("mouseleave", function () {
+			$(this).children(".timeline-class-desc").slideToggle();
 		});
 	}
-
 
 	navSetter('main');
 	navSetter('timeline');
@@ -44,8 +41,7 @@ function navSetter(id) {
 
 	$(window).scroll(function () {
 	    if (!timeout) {
-	        timeout = setTimeout(function () {
-	            console.log('scroll');            
+	        timeout = setTimeout(function () {           
 	            clearTimeout(timeout);
 	            timeout = null;
 	            if ($(window).scrollTop() >= target) {
