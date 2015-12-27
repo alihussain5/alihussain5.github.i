@@ -64,14 +64,15 @@ p {
 }
 
 #main .container-fluid {
+  width:100%;
   position: absolute;
-  top:25%;
-
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 
-#main .main-body {
-  position:relative;
-
+#main .main-bpdy {
+  position: relative;
 }
 
 #main .main-body p {
