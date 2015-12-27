@@ -104,6 +104,10 @@ p {
   #main .main-body p {
     font-size:15px;
   }
+
+  #main .main-body .main-proceed {
+    display:none;
+  }
 }
 
 #main .main-body .social-buttons .btn-default {
