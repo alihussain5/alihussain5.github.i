@@ -18,9 +18,10 @@ $(document).ready(function() {
 			if ($(this).hasClass('slidetoggle')) {
 				return;
 			}
-			$(this).addClass('slidetoggle')
+			$(this).addClass('slidetoggle');
 			$(this).children(".timeline-class-desc").stop().slideToggle(300, function () {
-				$(this).removeClass('slidetoggle')
+				$(this).removeClass('slidetoggle');
+				console.log('a');
 			});
 		//$(this).find(".hover").fadeIn(300);
 		});
