@@ -13,7 +13,7 @@ $(document).ready(function() {
 			$(this).children(".timeline-class-desc").slideToggle();
 		});	
 	} else {
-		$('.project').hover(function(){
+		$(".timeline-text-container").hover(function(){
 			$(this).find(".hover").slideToggle();
 		//$(this).find(".hover").fadeIn(300);
 		});
