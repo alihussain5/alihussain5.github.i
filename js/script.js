@@ -15,15 +15,7 @@ $(document).ready(function() {
 	} else {
 		$(".timeline-text-container").hover(function(){
 			$(this).children(".timeline-hover-notice").hide();
-			if ($(this).hasClass('slidetoggle')) {
-				return;
-			}
-			$(this).addClass('slidetoggle');
-			$(this).children(".timeline-class-desc").stop().slideToggle(300, function () {
-				$(this).removeClass('slidetoggle');
-				console.log('a');
-			});
-		//$(this).find(".hover").fadeIn(300);
+			$(this).children(".timeline-class-desc").stop().slideToggle();
 		});
 		/*$(".timeline-text-container").on("mouseenter", function () {
 			$(this).children(".timeline-hover-notice").hide();
