@@ -6,11 +6,9 @@ $(document).ready(function() {
 		scrollToID('#' + sectionID, 750);
 	});
 
-	$('.project').on("mouseenter",function(){
+	$('.project').hover(function(){
 		$(this).find(".hover").fadeIn(300);
-	});
-
-	$('.project').on("mouseleave",function() {
+	},function() {
 		$(this).find(".hover").fadeOut(200);
 	});
 
