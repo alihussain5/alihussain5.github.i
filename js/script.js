@@ -13,14 +13,18 @@ $(document).ready(function() {
 			$(this).children(".timeline-class-desc").slideToggle();
 		});	
 	} else {
-		$(".timeline-text-container").on("mouseenter", function () {
+		$('.project').hover(function(){
+			$(this).find(".hover").slideToggle();
+		//$(this).find(".hover").fadeIn(300);
+		});
+		/*$(".timeline-text-container").on("mouseenter", function () {
 			$(this).children(".timeline-hover-notice").hide();
 			$(this).children(".timeline-class-desc").slideToggle();
 		});
 
 		$(".timeline-text-container").on("mouseleave", function () {
 			$(this).children(".timeline-class-desc").slideToggle();
-		});
+		});*/
 	}
 
 	navSetter('main');
