@@ -14,6 +14,7 @@ $(document).ready(function() {
 		});	
 	} else {
 		$(".timeline-text-container").hover(function(){
+			$(this).children(".timeline-hover-notice").hide();
 			$(this).children(".timeline-class-desc").slideToggle();
 		//$(this).find(".hover").fadeIn(300);
 		});
