@@ -15,7 +15,13 @@ $(document).ready(function() {
 	} else {
 		$(".timeline-text-container").hover(function(){
 			$(this).children(".timeline-hover-notice").hide();
-			$(this).children(".timeline-class-desc").stop().slideToggle();
+			if ($(this).hasClass('slidetoggle')) {
+				return;
+			}
+			$(this).addClass('slidetoggle')
+			$(this).children(".timeline-class-desc").stop().slideToggle(300, function () {
+				$(this).removeClass('slidetoggle')
+			});
 		//$(this).find(".hover").fadeIn(300);
 		});
 		/*$(".timeline-text-container").on("mouseenter", function () {
