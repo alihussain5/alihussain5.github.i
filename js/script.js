@@ -7,10 +7,13 @@ $(document).ready(function() {
 	});
 
 	$('.project').hover(function(){
-		$(this).find(".hover").fadeIn(300);
-	},function() {
-		$(this).find(".hover").fadeOut(200);
+		$(this).find(".hover").slideToggle();
+		//$(this).find(".hover").fadeIn(300);
 	});
+	
+	//,function() {
+	//	$(this).find(".hover").fadeOut(200);
+	//});
 
 	$('.popup-link').magnificPopup({
 	  type:'inline',
