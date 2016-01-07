@@ -6,6 +6,7 @@ $(document).ready(function() {
 		scrollToID('#' + sectionID, 750);
 	});
 
+<<<<<<< HEAD
 	$('.project').hover(function(){
 		$(this).find(".hover").slideToggle();
 		//$(this).find(".hover").fadeIn(300);
@@ -19,24 +20,32 @@ $(document).ready(function() {
 	  type:'inline',
 	  midClick: true
 	});
+=======
+>>>>>>> refs/remotes/origin/gh-pages
 
-	$('.job-button').on('click', function(event) {
-		event.preventDefault();
-		var ID = $(this).attr("data-id");
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+		$(".timeline-text-container").on("click", function () {
+			$(this).children(".timeline-hover-notice").hide();
+			$(this).children(".timeline-class-desc").stop().slideToggle();
+		});	
+	} else {
+		$(".timeline-text-container").hover(function(){
+			$(this).children(".timeline-hover-notice").hide();
+			$(this).children(".timeline-class-desc").stop().slideToggle();
+		});
+		/*$(".timeline-text-container").on("mouseenter", function () {
+			$(this).children(".timeline-hover-notice").hide();
+			$(this).children(".timeline-class-desc").slideToggle();
+		});
 
-		$(".job").fadeOut(0);
-		$("#" + ID).fadeIn(200);
-		
-		
-	});
+		$(".timeline-text-container").on("mouseleave", function () {
+			$(this).children(".timeline-class-desc").slideToggle();
+		});*/
+	}
 
 	navSetter('main');
-	navSetter('about');
-	navSetter('resume');
+	navSetter('timeline');
 	navSetter('portfolio');
-
-	
-
 
 });
 // scroll function
@@ -52,8 +61,7 @@ function navSetter(id) {
 
 	$(window).scroll(function () {
 	    if (!timeout) {
-	        timeout = setTimeout(function () {
-	            console.log('scroll');            
+	        timeout = setTimeout(function () {           
 	            clearTimeout(timeout);
 	            timeout = null;
 	            if ($(window).scrollTop() >= target) {

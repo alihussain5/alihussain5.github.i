@@ -9,6 +9,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -27,28 +28,250 @@
         <div class="collapse navbar-collapse" id="navigationbar">
             <ul class="nav navbar-nav">
               <li class="active scroll-link" id="nav-main" data-id="main"><a href="#">Home</a></li>
-              <li class="scroll-link" id="nav-about" data-id="about"><a href="#">About Me</a></li>
-              <li class="scroll-link" id="nav-resume" data-id="resume"><a href="#">Work Experience</a></li>
+              <li class="scroll-link" id="nav-timeline" data-id="timeline"><a href="#">Timeline</a></li>
               <li class="scroll-link" id="nav-portfolio" data-id="portfolio"><a href="#">Portfolio</a></li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
 
 
     <div class="page" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="main-body col-md-8 col-md-offset-2 text-center">
             <h1>Ali Hussain</h1>
+            <p>University of Waterloo student with a passion for Mathematics, Software Engineering, and Information Technology</p>
+            <ul class="list-inline social-buttons">
+              <li>
+                  <a href="http://alihussa.in/resume" class="btn btn-default btn-lg"><i class="fa fa-list-alt fa-fw"></i> <span class="network-name">Resume</span></a>
+              </li>
+              <li>
+                  <a href="https://github.com/allawi" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+              </li>
+              <li>
+                  <a href="https://ca.linkedin.com/in/ahussain5" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+              </li>
+            </ul>
+
+            <div class="main-proceed">
+              <div class="circle scroll-link" data-id="timeline">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+              </div>
+            </div>
+ 
+
+            <!-- Resume Modal broken atm
+            <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    </div> 
+                </div> 
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page" id="timeline">
+
+      <div class="container">
+        <div clas="row">
+          <div class="col-xs-12 text-center title">
+            <h2>Timeline</h2>
+            <p>History in the making</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        
+
+        <div class="row timeline-item school">
+
+          <div class="timeline-icon col-sm-offset-5 col-xs-2">
+
+            <!--Lines around circle -->
+            <div class="horizontal"></div>
+            <div class="vertical-bottom"></div>
+          
+            <div class="circle">
+              <span class="glyphicon glyphicon-book"></span>
+            </div>
+          </div>
+
+          <div class="timeline-text col-sm-5 col-xs-10 col-md-4">
+            <div class="timeline-text-container">
+              <h3>January 2016 - <i>Present</i></h3>
+              <h4>3rd Year, 1st Semester</h4>
+                <div class="timeline-hover-notice">
+                  <p>Hover to Expand</p>
+                </div>
+                <div class="timeline-class-desc">
+                  <p>CS 245 - Logic and Computation
+                  <br>CS 246 - Object Oriented Programming
+                  <br>Stat 330 - Mathematical Statistics
+                  <br>Stat 331 - Applied Linear Models
+                  <br>Phil 145 - Critical Thinking</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row timeline-item work">
+          <div class="timeline-text col-sm-5 col-xs-10 text-right">
+            <div class="timeline-text-container">
+              <h3>September 2015 - December 2015</h3>
+              <h4>Kik Interactive, Inc.</h4>
+              <h5>Release & QA Engineering</h5>
+
+              <p>blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah</p>
+            </div>        
+          </div>
+
+          <div class="timeline-icon col-xs-2">
+            <div class="vertical-bottom"></div>
+            <div class="vertical-top"></div>
+            <div class="horizontal"></div>
+            <div class="circle">
+              <span class="glyphicon glyphicon-briefcase"></span>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-md-offset-2 text-center">
-            <p>University of Waterloo student with a passion for Mathematics, Software Engineering, and Information Technology</p>
+        <div class="row timeline-item school">
+
+          <div class="timeline-icon col-sm-offset-5 col-xs-2">
+            <div class="vertical-bottom"></div>
+            <div class="vertical-top"></div>
+            <div class="horizontal"></div>
+            <div class="circle">
+              <span class="glyphicon glyphicon-book"></span>
+            </div>
+          </div>
+
+          <div class="timeline-text col-sm-5 col-xs-10 col-md-4">
+            <div class="timeline-text-container">
+              <h3>May 2015 - August 2015</h3>
+              <h4>2nd Year, 2nd Semester</h4>
+
+                <div class="timeline-class-desc">
+                  <p>ACTSC 371 - Introduction to Investments
+                  <br>Stat 231 - Statistics
+                  <br>AFM 101 - Introduction to Financial Accounting
+                  <br>Econ 202 - Macroeconomic Theory 1</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row timeline-item work">
+          <div class="timeline-text col-sm-5 col-xs-10 text-right">
+            <div class="timeline-text-container">
+              <h3>January 2015 - April 2015</h3>
+              <h4>Kenna</h4>
+              <h5>IT Systems Administrator</h5>
+              <p>blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah</p>
+            </div>
+          </div>
+
+          <div class="timeline-icon col-xs-2">
+            <div class="vertical-bottom"></div>
+            <div class="vertical-top"></div>
+            <div class="horizontal"></div>
+            <div class="circle">
+              <span class="glyphicon glyphicon-briefcase"></span>
+            </div>
           </div>
         </div>
+
+        <div class="row timeline-item school">
+
+          <div class="timeline-icon col-sm-offset-5 col-xs-2">
+            <div class="vertical-bottom"></div>
+            <div class="vertical-top"></div>
+            <div class="horizontal"></div>
+            <div class="circle">
+              <span class="glyphicon glyphicon-book"></span>
+            </div>
+          </div>
+
+            <div class="timeline-text col-sm-5 col-xs-10 col-md-4">
+              <div class="timeline-text-container">
+                <h3>September 2014 - December 2014</h3>
+                <h4>2nd Year, 1st Semester</h4>
+
+                <div class="timeline-class-desc">
+                  <p>Math 235 - Linear Algebra 2
+                  <br>Math 237 - Calculus 3
+                  <br>Stat 230 - Probability
+                  <br>CO 250 - Introduction to Optimization
+                  <br>Engl 119 - Comminication in Math & CS</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="row timeline-item school">
+
+          <div class="timeline-icon col-sm-offset-5 col-xs-2">
+            <div class="vertical-bottom"></div>
+            <div class="vertical-top"></div>
+            <div class="horizontal"></div>
+            <div class="circle">
+              <span class="glyphicon glyphicon-book"></span>
+            </div>
+          </div>
+            <div class="timeline-text col-sm-5 col-xs-10 col-md-4">
+              <div class="timeline-text-container">
+                <h3>January 2014 - April 2014</h3>
+                <h4>1st Year, 2nd Semester</h4>
+
+                <div class="timeline-class-desc">
+                  <p>CS 136 - Elementary Algo Design
+                  <br>Math 136 - Linear Albegra 1
+                  <br>Math 128 - Calculus 2
+                  <br>BU 121 - Areas of Business Orginization
+                  <br>Econ 102 - Intro to Macroeconomics</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="row timeline-item school">
+
+          <div class="timeline-icon col-sm-offset-5 col-xs-2">
+
+            <div class="vertical-top"></div>
+            <div class="horizontal"></div>
+            <div class="circle">
+              <span class="glyphicon glyphicon-book"></span>
+            </div>
+          </div>
+
+            <div class="timeline-text col-sm-5 col-xs-10 col-md-4">
+              <div class="timeline-text-container">
+                <h3>September 2013 - December 2013</h3>
+                <h4>1st Year, 1st Semester</h4>
+                <div class="timeline-class-desc">
+                  <p>CS 135 - Designing Functional Programs
+                  <br>Math 135 - Algebra
+                  <br>Math 137 - Calculus 1
+                  <br>BU 111 - Intro to Business Organization
+                  <br>Econ 101 - Intro to Microeconomics</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
       </div>
     </div>
 
@@ -57,80 +280,230 @@
         <div clas="row">
           <div class="col-xs-12 text-center title">
             <h2>Portfolio</h2>
+            <p>A collection of my projects</p>
           </div>
         </div>
+      </div>
 
-
+      <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="#">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project1Modal">
               <div class="portfolio-hover">
-                <i class="fa fa-plus fa-3x"></i>
+                <span class="glyphicon glyphicon-resize-full"></span>
               </div>
-              <img src="../img/golden.png" />
+              <img src="img/golden.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
               <h4>Project 1</h4>
               <p>Example</p>
             </div>
-          </div>
+          
+            <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-hover">
-                <i class="fa fa-plus fa-3x"></i>
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Project 1</h3>
+                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <img src="../img/golden.png" />
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project2Modal">
+              <div class="portfolio-hover">
+                <span class="glyphicon glyphicon-resize-full"></span>
+              </div>
+              <img src="img/golden.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
               <h4>Project 2</h4>
               <p>Example</p>
             </div>
-          </div>
+          
+            <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-hover">
-                <i class="fa fa-plus fa-3x"></i>
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Project 2</h3>
+                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <img src="../img/golden.png" />
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project3Modal">
+              <div class="portfolio-hover">
+                <span class="glyphicon glyphicon-resize-full"></span>
+              </div>
+              <img src="img/golden.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
               <h4>Project 3</h4>
               <p>Example</p>
             </div>
-          </div>
+          
+            <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-hover">
-                <i class="fa fa-plus fa-3x"></i>
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Project 3</h3>
+                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <img src="../img/golden.png" />
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project4Modal">
+              <div class="portfolio-hover">
+                <span class="glyphicon glyphicon-resize-full"></span>
+              </div>
+              <img src="img/golden.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
               <h4>Project 4</h4>
               <p>Example</p>
             </div>
-          </div>
+          
+            <div class="modal fade" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="project4Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
 
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-hover">
-                <i class="fa fa-plus fa-3x"></i>
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Project 4</h3>
+                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <img src="../img/golden.png" />
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project5Modal">
+              <div class="portfolio-hover">
+                <span class="glyphicon glyphicon-resize-full"></span>
+              </div>
+              <img src="img/golden.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
               <h4>Project 5</h4>
               <p>Example</p>
             </div>
+          
+            <div class="modal fade" id="project5Modal" tabindex="-1" role="dialog" aria-labelledby="project5Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Project 5</h3>
+                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project6Modal">
+              <div class="portfolio-hover">
+                <span class="glyphicon glyphicon-resize-full"></span>
+              </div>
+              <img src="img/golden.png" />
+            </a>
+
+            <div class="portfolio-subtitle text-center">
+              <h4>Project 6</h4>
+              <p>Example</p>
+            </div>
+          
+            <div class="modal fade" id="project6Modal" tabindex="-1" role="dialog" aria-labelledby="project6Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Project 6</h3>
+                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
 
           </div>
         </div>
