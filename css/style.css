@@ -114,8 +114,8 @@ p {
 }
 
 #main .main-body .social-buttons .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #D0AB55;
+    color: #D0AB55;
     background-color: transparent;
     transition: all ease .5s;
     -webkit-transition: all ease .5s;
@@ -127,10 +127,10 @@ p {
 
 #main .main-body .social-buttons .btn-default:hover,
 #main .main-body .social-buttons .btn-default:hover {
-    border: 1px solid #42dca3;
+    border: 1px solid #D0AB55;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #D0AB55;
 }
 
 #main .main-body .main-proceed {
@@ -158,8 +158,8 @@ p {
 #main .main-body .main-proceed .circle:hover,
 #main .main-body .main-proceed .circle:focus {
 
-  color:#42dca3;
-  border-color:#42dca3;
+  color:#D0AB55;
+  border-color:#D0AB55;
 }
 
 
@@ -168,8 +168,9 @@ p {
 }
 
 #portfolio .portfolio-item {
-  margin: 0 0 30px;
+  margin: 0 0 4%;
   right:0;
+  height:350px;
 }
 
 #portfolio .portfolio-item .portfolio-link,
@@ -182,6 +183,9 @@ p {
 }
 
 #portfolio .portfolio-item .portfolio-link {
+  max-height:80%;
+  background-size:cover;
+  overflow-y:hidden;
   height:80%;
 }
 
@@ -196,8 +200,7 @@ p {
 
 #portfolio .portfolio-item .portfolio-link img {
   overflow:hidden;
-  max-width: 100%;
-  max-height:100%;
+  max-width:100%;
 }
 
 #portfolio .portfolio-item .portfolio-subtitle {
@@ -209,8 +212,7 @@ p {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background:rgba(254,209,54,.9);
-  background:rgba(140,140,140,0.9);
+  background:#D0AB55;
 
   position: absolute;
   width:100%;
@@ -243,29 +245,38 @@ p {
 }
 
 #portfolio .portfolio-item .modal .modal-body .modal-body-picture img {
-  display:block;
+  display:inline-block;
+  height:100%;
+  width:auto;
   margin-left:auto;
   margin-right:auto;
+  
 }
 
 #portfolio .portfolio-item .modal .modal-body .modal-body-picture {
   overflow:hidden;
-  height:300px;
+  height:400px;
   max-width:auto;
   margin: 0 10%;
+  text-align: center;
 }
 
-#portfolio .portfolio-item .modal .modal-body .modal-body-text h3 {
+#portfolio .portfolio-item .modal .modal-body .modal-body-text h4,
+#portfolio .portfolio-item .modal .modal-body .modal-body-text h5 {
   margin-left:auto;
   margin-right:auto;
   display:block;
   text-align: center;
+  padding-top:2%;
+  padding-bottom:1%;
+}
+
+#portfolio .portfolio-item .modal .modal-body .modal-body-text h5 {
+  padding-top:1%;
 }
 
 #portfolio .portfolio-item .modal .modal-body .modal-body-text {
-  margin-left: 10%;
-  margin-right: 5%;
-
+  padding: 0 5% 5% 5%;
 }
 
 @media (min-width: 992px) {
