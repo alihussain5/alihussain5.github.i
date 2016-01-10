@@ -18,6 +18,7 @@ html > body .page {
 h1,h2,h3,h4,h5,h6 {
   letter-spacing: 1px;
   color:white;
+
 }
 
 h1 {
@@ -27,7 +28,7 @@ h1 {
 
 h2 {
   color:#363636;
-  font-size:50px;
+  font-size:60px;
 }
 
 h3 {
@@ -58,7 +59,7 @@ p {
 }
 
 #main {
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg4.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -164,7 +165,7 @@ p {
 
 
 #portfolio {
-  background-color: #CCC;
+  background-color: #DEDEDE;
 }
 
 #portfolio .portfolio-item {
@@ -180,6 +181,10 @@ p {
   max-width:400px;
   margin: 0 auto;
   background-color: gray;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -291,7 +296,7 @@ p {
 }
 
 #timeline {
-  background-color: #ABABAB;
+  background-color: #F2F2F2;
   position:relative;
   z-index:-1;
   padding-bottom:40px;
@@ -303,6 +308,8 @@ p {
   min-height:100px;
   display:flex;
   align-items:center;
+
+
 }
 
 
@@ -328,10 +335,11 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  color:#D0AB55;
 }
 
 #timeline .timeline-item .timeline-icon .circle span {
-  color:#363636;
+  color:#D0AB55;
   left:50%;
   top:50%;
   font-size:40px;
@@ -386,6 +394,9 @@ p {
   color:black;
   position: relative;
   margin: 15px 0;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
 #timeline .work .timeline-text .timeline-text-container {
@@ -418,14 +429,17 @@ p {
     height:150%;
   }
   #timeline .timeline-item .timeline-icon .circle {
-    border:2px white solid;
-    background-color:black;
+    border:2px #D0AB55 solid;
+    background-color:#363636;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   }
 
   #timeline .timeline-item .timeline-icon .horizontal {
     width:90%;
   }
   #timeline .timeline-item .timeline-icon .circle span {
-    color:white;
+    color:#D0AB55;
   }
 }
