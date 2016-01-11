@@ -192,6 +192,7 @@ p {
   background-size:cover;
   overflow-y:hidden;
   height:80%;
+  background-color:white;
 }
 
 #portfolio .portfolio-item .portfolio-link:focus {
@@ -397,6 +398,10 @@ p {
         -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
   -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+#timeline .timeline-item .timeline-text .timeline-text-container p {
+  text-align:left;
 }
 
 #timeline .work .timeline-text .timeline-text-container {
