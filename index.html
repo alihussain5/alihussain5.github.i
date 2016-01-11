@@ -299,7 +299,7 @@
 
       <div class="container">
         <div class="row">
-                    <div class="col-md-3 col-sm-6 portfolio-item">
+          <div class="col-md-3 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" data-target="#project1Modal">
               <div class="portfolio-hover">
                 <span class="glyphicon glyphicon-resize-full"></span>
@@ -351,7 +351,7 @@
             </a>
 
             <div class="portfolio-subtitle text-center">
-              <h4>App Store Review Analysis</h4>
+              <h4>App Review Analysis</h4>
               <p>Side Project at Kik</p>
             </div>
           
@@ -457,6 +457,7 @@
                     <div class="modal-body-text">
                       <h4>Personal Website</h4>
                       <p>Similar to my resume template, I didn't like the idea of finding an online template to showcase my work. Instead, I ventured out and created my own Bootstrap template.</p>
+                      <p>Bootstrap is fantastic for its mobile scaliblity, this website would not be scalable without it.</p>
                       <p>The source is available at <a href="http://github.com/allawi/allawi.github.io">github.com/allawi/allawi.github.io</a></p>
                     </div>
                   </div>
@@ -492,8 +493,10 @@
                     </div>
 
                     <div class="modal-body-text">
-                      <h3>Project 5</h3>
-                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                      <h4>Study with Company</h4>
+                      <p>A web app created to bring students together to study. TO BE CONTINUED</p>
+                      <h4>Technologies</h4>
+                      <p>Web interface was created using JavaScript, jQuery, Google Maps API. Pebble app was created using JavaScript. Firebase was used instead of a back-end</p>
                     </div>
                   </div>
                 </div>
@@ -506,12 +509,12 @@
               <div class="portfolio-hover">
                 <span class="glyphicon glyphicon-resize-full"></span>
               </div>
-              <img src="img/golden.png" />
+              <img src="img/docker/icon.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
-              <h4>Project 6</h4>
-              <p>Example</p>
+              <h4>Docker</h4>
+              <p>Kenna</p>
             </div>
           
             <div class="modal fade" id="project6Modal" tabindex="-1" role="dialog" aria-labelledby="project6Modal" aria-hidden="true">
@@ -528,8 +531,8 @@
                     </div>
 
                     <div class="modal-body-text">
-                      <h3>Project 6</h3>
-                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                      <h3>Docker</h3>
+                      <p>Led team of co-op students to researching and implementing a proof of concept for Docker.</p>
                     </div>
                   </div>
                 </div>
@@ -538,8 +541,90 @@
 
           </div>
 
+          <div class="col-md-3 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" data-target="#project6Modal">
+              <div class="portfolio-hover">
+                <span class="glyphicon glyphicon-resize-full"></span>
+              </div>
+              <img src="img/aerohive/icon.png" />
+            </a>
+
+            <div class="portfolio-subtitle text-center">
+              <h4>Aerohive Migration</h4>
+              <p>Kenna</p>
+            </div>
+          
+            <div class="modal fade" id="project6Modal" tabindex="-1" role="dialog" aria-labelledby="project6Modal" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content modal-admin">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="modal-body-picture">
+                        <img src="img/pic.png">
+                    </div>
+
+                    <div class="modal-body-text">
+                      <h3>Aerohive Migration</h3>
+                      <p>Migrated office Wifi from aging Cisco access points to Aerohive.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="page" id="contact">
+        <div class="container">
+          <!--Contact form is from https://github.com/bootstrapbay/contact-form -->
+          <form class="form-horizontal" role="form" method="post" action="index.php">
+              <div class="form-group">
+                  <label for="name" class="col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                      <?php echo "<p class='text-danger'>$errName</p>";?>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                      <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="message" class="col-sm-2 control-label">Message</label>
+                  <div class="col-sm-10">
+                      <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                      <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                  <div class="col-sm-10">
+                      <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                      <?php echo "<p class='text-danger'>$errHuman</p>";?>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-10 col-sm-offset-2">
+                      <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-10 col-sm-offset-2">
+                      <?php echo $result; ?>    
+                  </div>
+              </div>
+          </form> 
         </div>
       </div>
     </div>

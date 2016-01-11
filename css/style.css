@@ -172,6 +172,13 @@ p {
   margin: 0 0 4%;
   right:0;
   height:350px;
+
+}
+
+@media (max-width:768px) {
+  #portfolio .portfolio-item {
+    margin-bottom:10%;
+  }
 }
 
 #portfolio .portfolio-item .portfolio-link,
@@ -296,6 +303,8 @@ p {
     margin-right: 5%;
   }
 }
+
+
 
 #timeline {
   background-color: #F2F2F2;
@@ -448,4 +457,10 @@ p {
   #timeline .timeline-item .timeline-icon .circle span {
     color:#D0AB55;
   }
+}
+
+#contact {
+  height:40%;
+  min-height:40%;
+  background-color:#262721;
 }
