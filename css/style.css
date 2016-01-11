@@ -193,6 +193,7 @@ p {
   overflow-y:hidden;
   height:80%;
   background-color:white;
+  cursor:pointer;
 }
 
 #portfolio .portfolio-item .portfolio-link:focus {
