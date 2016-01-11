@@ -17,14 +17,6 @@ $(document).ready(function() {
 			$(this).children(".timeline-hover-notice").hide();
 			$(this).children(".timeline-class-desc").stop().slideToggle();
 		});
-		/*$(".timeline-text-container").on("mouseenter", function () {
-			$(this).children(".timeline-hover-notice").hide();
-			$(this).children(".timeline-class-desc").slideToggle();
-		});
-
-		$(".timeline-text-container").on("mouseleave", function () {
-			$(this).children(".timeline-class-desc").slideToggle();
-		});*/
 	}
 
 	navSetter('main');
