@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mathematics student at University of Waterloo">
 
     <title>Ali Hussain</title>
     <link href="css/normalize.css" rel="stylesheet">
@@ -292,12 +293,12 @@
               <div class="portfolio-hover">
                 <span class="glyphicon glyphicon-resize-full"></span>
               </div>
-              <img src="img/golden.png" />
+              <img src="img/feedbackbot/icon.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
-              <h4>Project 1</h4>
-              <p>Example</p>
+              <h4>Feedback Bot</h4>
+              <p>Kik Hack Week</p>
             </div>
           
             <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1Modal" aria-hidden="true">
@@ -310,12 +311,19 @@
 
                   <div class="modal-body">
                     <div class="modal-body-picture">
-                        <img src="img/pic.png">
+                        <img src="img/feedbackbot/1.png" />
+                        <img src="img/feedbackbot/2.png" />
+                        <img src="img/feedbackbot/3.png" />
                     </div>
 
                     <div class="modal-body-text">
-                      <h3>Project 1</h3>
-                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                      <h4>Feedback Bot</h4>
+                      <p>Feedback Bot was created as a project for Kik Hack Week, a tri-annual hackathon held at Kik for its employees.</p>
+                      <p>The bot asks users about their opinions on different features added to Kik. This data is collected and later processed into a summary.</p>
+                      <p>A regular user is only allowed to leave feedback, however if one is detected to be a Kik employee they can ask the bot for statistics. Asking the bot this will return the most recently processed summary of gathered data.</p>
+                      <h4>Technologies</h4>
+                      <p>Feedback Bot was written in Python built over an existing bot framework. In addition, it uses the NLTK library to process user input and Firebase to store and pull data.</p>
+                      <p>Firebase was picked over a traditional back-end for its ease of use. In a hackathon, its important to save time where possible and Firebase does a fantastic job at that.</p>
                     </div>
                   </div>
                 </div>
@@ -328,12 +336,12 @@
               <div class="portfolio-hover">
                 <span class="glyphicon glyphicon-resize-full"></span>
               </div>
-              <img src="img/golden.png" />
+              <img src="img/appreview/icon.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
-              <h4>Project 2</h4>
-              <p>Example</p>
+              <h4>App Store Review Analysis</h4>
+              <p>Side Project at Kik</p>
             </div>
           
             <div class="modal fade" id="project2Modal" tabindex="-1" role="dialog" aria-labelledby="project2Modal" aria-hidden="true">
@@ -345,13 +353,25 @@
                   </div>
 
                   <div class="modal-body">
-                    <div class="modal-body-picture">
+                    <!--<div class="modal-body-picture">
                         <img src="img/pic.png">
-                    </div>
+                    </div>-->
 
                     <div class="modal-body-text">
-                      <h3>Project 2</h3>
-                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                      <h4>App Review Analysis</h4>
+                      <p>During my work term at Kik I was tasked with finding a way to extract valuable information from app store reviews and parse it in an easily interpretable way. Kik receives hundreds of app store reviews a day with hundreds of thousands since release. Sifting through this data would be impossible by hand so we turn to implementing algorithms that do it for us. Being able to automatically categorize everything allows us to take this data to the next level and decide how to take advantage of it.</p>
+                      <h4>Break Down</h4>
+                      <h5>Collecting Data</h5>
+                      <p>Review data was cyphoned from the Google Play store using their convenient <i>gsutil</i> and from the Apple App Store using a multitude of hacks involving scraping the iTunes Store, HTML/XML parsing, and for loops.</p>
+                      <h5>Parsing Data</h5>
+                      <p>Firstly, reviews are clustered based on categories. Topics included basic app functionality such as crashing, performance, bugs aswell as feature releases such as GIFs, media tray updates, and chat bubble colours. This was done using keyword detection and a hash table mapping keywords to categories. Using keywords was not the best idea due to typos and slang thus I was hoping to redo it using Google's <i>Word2vec</i> (word vectors), unfortunately I never got around to finishing the implentation.</p>
+                      <p>Next up was deciphering between negative and positive sentiments. Each review has a rating, or <i>stars</i>, though after some researching and experimenting I concluded it was far from accurate. A sample of 3000 reviews were randomly selected from years ranging 2010 to 2015 and manually read through. Roughly 10% of these reviews had accurately used the rating system (this was judged by comparing the content of the review to its rating; specifically a lot of negative reviews still had 4-5 stars regardless of their content). This led to the decision of using natural language processing to properly classify this data.</p>
+                      <p>The same 3000 reviews previously selected were manually classified between positive and negative and using NLTK, a Python natural language processing library, were used to train a sentiment classifier. This trained classifier was now used to classify each review on a scale of -1 to 1, replacing the stars system (-1 being equivalent to 0 stars, 0 to 3 and 1 to 5).</p>
+                      <h5>Presenting Data</h5>
+                      <p>Between update releases, each category would be assessed and compared to a 95% confidence interval to discover whether public opinion falls in the norm. This data, along with a few helpful things such as review count, were thrown into a web-based dashboard to be easily interpreted by users. For example, after 9.0 was released there was major backlash for Kik's decision to remove hashtag groups, the web dashboard would show an alert for "groups" as the wave of negative reviews were out of the norm.</p>
+                      <h4>Technologies</h4>
+                      <p>The program to collect and parse data was written Python. Collection was made possible by Google's <i>gsutil</i> on the Android side and <i>BeautifulSoup</i>, an HTML/XML parser, on the Apple side. <i>Pandas'</i> data frames were an integral part of managing the data and <i>NLTK</i> was used to take advantage of its Naive Bayes Classifier. MySQL was used to store the parsed data.</p>
+                      <p>On the front end, JavaScript was used to show the interpreted data, a PHP script used to pull data from the MySQL database, and D3 to use that data within JavaScript. NVD3, a chart library for D3, was used to showcase fancy interactable graphs and present other useful information.</p>
                     </div>
                   </div>
                 </div>
@@ -364,12 +384,12 @@
               <div class="portfolio-hover">
                 <span class="glyphicon glyphicon-resize-full"></span>
               </div>
-              <img src="img/golden.png" />
+              <img src="img/resume/icon.png" />
             </a>
 
             <div class="portfolio-subtitle text-center">
-              <h4>Project 3</h4>
-              <p>Example</p>
+              <h4>Resume Template</h4>
+              <p>Side Project</p>
             </div>
           
             <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3Modal" aria-hidden="true">
@@ -381,13 +401,15 @@
                   </div>
 
                   <div class="modal-body">
-                    <div class="modal-body-picture">
+                    <!--<div class="modal-body-picture">
                         <img src="img/pic.png">
-                    </div>
+                    </div>-->
 
                     <div class="modal-body-text">
-                      <h3>Project 3</h3>
-                      <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
+                      <h4>Resume Template</h4>
+                      <p>Like plenty of other students, I would scour the web for the perfect resume template. I've gone through everything from basic Microsoft Word templates to HTML templates to LaTeX templates. I decided to expand on my CSS abilities and create my own template from scratch.</p>
+                      <p>More info on the template, including source, is available at <a href="http://github.com/allawi/resume">github.com/allawi/resume</a></p>
+                      <p>A live demo is available at <a href="http://alihussa.in/resume">alihussa.in/resume</a></p>
                     </div>
                   </div>
                 </div>

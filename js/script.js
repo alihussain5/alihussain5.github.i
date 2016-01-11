@@ -6,22 +6,6 @@ $(document).ready(function() {
 		scrollToID('#' + sectionID, 750);
 	});
 
-<<<<<<< HEAD
-	$('.project').hover(function(){
-		$(this).find(".hover").slideToggle();
-		//$(this).find(".hover").fadeIn(300);
-	});
-	
-	//,function() {
-	//	$(this).find(".hover").fadeOut(200);
-	//});
-
-	$('.popup-link').magnificPopup({
-	  type:'inline',
-	  midClick: true
-	});
-=======
->>>>>>> refs/remotes/origin/gh-pages
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		$(".timeline-text-container").on("click", function () {
