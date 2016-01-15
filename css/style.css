@@ -59,6 +59,7 @@ p {
 
   margin: 5% 0;
   margin-bottom:3%;
+  margin-top:2%;
 }
 
 #main {
@@ -488,13 +489,8 @@ p {
   color:#D0AB55;
 }
 
-#footer {
-  height:5%;
-  min-height:5%;
-  text-align: center;
-  background-color: #DEDEDE;
-}
 
 #contact .source {
-  margin-top:5%;
+  margin-top:3%;
+
 }
