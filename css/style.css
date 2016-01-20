@@ -446,7 +446,7 @@ p {
 @media (min-width: 768px) {
   #timeline .timeline-item .timeline-icon .vertical-top,
   #timeline .timeline-item .timeline-icon .vertical-bottom {
-    height:150%;
+    height:180%;
     background-color:#CFAA56;
   }
   #timeline .timeline-item .timeline-icon .circle {
