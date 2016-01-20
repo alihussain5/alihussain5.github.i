@@ -378,7 +378,7 @@ p {
 }
 
 #timeline .timeline-item .timeline-icon .vertical-top {
-  top:0;
+  top:-50%;
   z-index:1;
 }
 
