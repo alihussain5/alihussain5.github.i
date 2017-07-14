@@ -22,8 +22,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size:80px;
-  font-weight:700;
+  font-size:50px;
+  font-weight:400;
+  color:#c5c5c5;
 }
 
 h2 {
@@ -63,7 +64,7 @@ p {
 }
 
 #main {
-    background-color: #677489;
+    background-color: #545454;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -83,13 +84,13 @@ p {
 }
 
 #main .main-body p {
-  font-size:30px;
-  color:white;
-  font-weight:300;
+  font-size:25px;
+  color:#c5c5c5;
+  font-weight:200;
 }
 
 #main .main-body .social-buttons {
-  margin-top:5%;
+  margin-top:2.3%;
 }
 
 @media (max-width: 768px) {
@@ -117,8 +118,10 @@ p {
 }
 
 #main .main-body .social-buttons .btn-default {
-    border: 1px solid #D0AB55;
-    color: #D0AB55;
+    /*border: 1px solid #D0AB55;
+    color: #D0AB55;*/
+    color:#c5c5c5;
+    border: 1px solid #c5c5c5;
     background-color: transparent;
     transition: all ease .5s;
     -webkit-transition: all ease .5s;
