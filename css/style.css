@@ -64,7 +64,7 @@ p {
 }
 
 #main {
-    background-color: #545454;
+    background-color: #353434;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -134,10 +134,10 @@ p {
 
 #main .main-body .social-buttons .btn-default:hover,
 #main .main-body .social-buttons .btn-default:hover {
-    border: 1px solid #D0AB55;
+    border: 1px solid #c5c5c5;
     outline: 0;
-    color: #000;
-    background-color: #D0AB55;
+    color: #353434;
+    background-color: #c5c5c5;
 }
 
 #main .main-body .main-proceed {
